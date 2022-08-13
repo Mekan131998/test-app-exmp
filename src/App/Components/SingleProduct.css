@@ -1,0 +1,367 @@
+.product-container {
+    width: 100%;
+}
+
+.product-row {
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    flex-direction: row;
+}
+
+.singleProduct-col-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    margin: 0px 5px;
+
+}
+
+.singleProduct-col-2 {
+    width: 55%;
+    margin: 0px 5px;
+}
+
+.product-brand-like {
+    margin: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    gap: 60px;
+}
+
+.product-check {
+    display: flex;
+    border-radius: 5px;
+    border: 1px solid #e3e6f0 !important;
+    display: flex;
+    align-items: center;
+}
+.product-check span {
+    padding: 6px 14px;
+    display: flex;
+    align-items: center;
+}
+
+.product-check .heart {
+    color: var(--danger);
+}
+
+.product-check label {
+    font-size: 16px;
+    font-family: 'Poppins';
+    margin-left: 4px;
+}
+
+.singleProduct-col-2 h4 {
+    color: var(--gray-dark);
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-family: 'Poppins';
+}
+.model-copy {
+    display: flex;
+}
+
+.model-copy input[type="text"] {
+    border: none;
+    outline: 1px solid var(--danger);
+    padding: 10px 10px;
+}
+.model-copy button {
+    border: none;
+    outline: 1px solid var(--blue);
+    padding: 10px 15px;
+    margin-right: 1px;
+}
+
+
+.model-copy a {
+    border: none;
+    border-left: none;
+    outline: 1px solid var(--danger);
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.short-desc {
+    margin: 15px 0px;
+}
+.short-desc h4 {
+    font-family: 'Poppins';
+    font-size: 18px;
+}
+
+.short-desc p {
+    color: var(--secondary);
+    font-size: 16px;
+    font-family: 'Poppins';
+}
+
+.price-cart {
+    display: flex;
+    align-items: center;
+}
+
+.price-cart span {
+    margin-right: 20px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.price-cart button {
+    border: none;
+    padding: 10px 10px;
+    font-size: 16px;
+    background: var(--danger);
+    border-radius: 50px;
+    color: var(--white);
+}
+/* Modal */
+
+.modalfull {
+    display: none; 
+    position: fixed; 
+    z-index: 999; 
+    padding-top: 120px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.6); 
+}
+
+.mdlactive {
+    display: block;
+}
+
+.modalfull-content {
+    width: 40%;
+    height: auto;
+    position: relative;
+    border: 1px solid #b7b9cc !important;
+    margin: auto;
+    padding: 0;
+    background: var(--white);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    /* -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s; */
+    z-index: 100;
+}
+
+.mdlclose {
+    font-size: 32px;
+    font-weight: bold;
+    right: 20px;
+    top: 5px;
+    color: var(--white);
+    position: absolute;
+
+}
+
+
+/* Slider */
+
+.slider {
+    border: 1px solid #e3e6f0 !important;
+    width: 100%;
+    /* max-height: 500px; */
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slide {
+    position: absolute;
+    left: 0;  
+    bottom: 0;  
+    width: 100%;
+    height: 100%;  
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.4s ease-in-out;
+    justify-content: center;
+}
+.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+.arrow {
+    border: 2px solid var(--gray-dark);
+    border-radius: 50%;
+    background: transparent;
+    color: var(--light);
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    position: absolute;
+    z-index:20;
+}
+.arrow:hover {
+    color: #777;
+    background: #fff;
+}
+.next {
+    text-align: center;
+    top: 50%;
+    font-size: 24px;
+    right: 1.5rem;
+}
+.prev {
+    text-align: center;
+    top: 50%;
+    font-size: 24px;
+    left: 1.5rem;
+}
+
+
+/* thumbs */
+.thumb {
+    width: 80%;
+    height: 60px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 10px 0px;
+
+}
+.thumb img {
+    width: calc(90% / 5 - 5px);
+    max-width: calc(90% / 5 - 5px);
+    height: 100%;
+    margin-right: 5px;
+    border: 1px solid rgba(0, 0, 100, 0.5);
+    opacity: 0.7;
+}
+.thumb img.active {
+    opacity: 1;
+    border: 1px solid rgba(0, 0, 100, 0.9);
+}
+
+
+/* tab single product */
+
+
+
+.tab-row {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab-row li {
+    /* margin: 10px 20px; */
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: 'Poppins';
+    cursor: pointer;
+}
+.tab-row li:hover {
+    color: var(--danger);
+}
+
+.tab-row li.active-tab {
+    color: var(--danger);
+    border-bottom: 1px solid var(--danger);
+}
+
+.single-prod-desc {
+    padding: 10px;
+     font-size: 18px;
+    font-family: "Poppins";
+    color: var(--gray-dark);
+    border:1px solid #e3e6f0;
+    background-color: var(--white);
+}
+
+.tab-danger-comment  {
+    border-radius: 4px;
+    border: 1px solid var(--danger);
+    background-color:  #fdf3d8;
+    border-color: #fceec9;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Poppins';
+    padding: 10px 0px;
+    text-align: center;
+}
+.tab-btn-div {
+    margin: 10px 0px;
+}
+.tab-btn {
+    border-radius: 5px;
+    border: none;
+    padding: 8px 0px;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Poppins';
+    font-weight: normal;
+    color: var(--white);
+    background: var(--danger);
+}
+
+
+
+
+
+
+.tab-table {
+    margin: 10px 0px;
+    border-collapse: collapse;
+    width: 100%;
+    padding: 5px 10px;
+}
+.tab-table tr, td {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--gray-dark);
+    font-family: 'Poppins';
+}
+
+.tab-table tr, .tab-table td {
+    border: 1px solid #e3e6f0 !important;
+}
+
+.tab-table tr:nth-child(odd) {
+    /* background: var(--light); */
+    background-color: rgba(0, 0, 0, 0.05);;
+}
+
+
+
+
+@media screen and (max-width:768px) {
+    .product-row {
+        flex-direction: column;
+    }
+    .singleProduct-col-1 {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .singleProduct-col-2 {
+        width: 100%;
+    }
+    .product-brand-like {
+        gap: 10px;
+    }
+    .tab-row {
+        flex-direction: column;
+    }
+    .modalfull-content {
+        width: 70%;
+    }
+}

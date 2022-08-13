@@ -1,0 +1,170 @@
+.card_container {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+
+    /* -webkit-box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+    -moz-box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+    box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10); */
+    display: flex;
+    flex-direction: column;
+}
+
+.card_head {
+    text-align: center;
+    font-family: 'Poppins';
+    font-weight: 600;
+    color: var(--gray-dark);
+}
+
+.cart_item {
+    border: 1px solid #e3e6f0 !important;
+    margin-bottom: 20px;
+    background: var(--white);
+}
+
+.card_row  {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    min-height: 80px;
+}
+
+.br-top {
+    border-top: 1px solid #e3e6f0 !important;
+}
+.card_row div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 18px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.card_row .product {
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.card_row h5 {
+    font-size: 16px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    color: var(--gray-dark);
+}
+
+
+.card_qty {
+    display: flex;
+    align-items: center;
+}
+.card_qty span {
+    font-family: 'Poppins';
+    font-size: 16px;
+
+}
+.card_qty button {
+    margin: 0px 5px;
+    border: none;
+    background: var(--light);
+    padding: 6px 12px;
+    font-family: 'Poppins';
+    color: var(--gray-dark);
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.card_qty button:hover {
+    background: var(--secondary);
+    color: var(--white);
+}
+
+.check_out {
+    display: flex;
+    float: right;
+    justify-content: flex-end;
+}
+
+.check_item {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.check_item h4 {
+    margin-bottom: 10px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 600;
+}
+.check_item select {
+    width: 100%;
+    padding: 5px 5px;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+
+
+.check_item button {
+    margin-top: 10px;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    background: var(--danger);
+    color: var(--white);
+    font-size: 16px;
+    font-family: 'Poppins';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease;
+}
+
+.check_item button:hover {
+    background: var(--gray-dark);
+}
+
+.check-table {
+    margin: 10px 0px;
+    border-collapse: collapse;
+}
+.check-table tr, td {
+    padding: 10px;
+}
+
+.check-table tr, .check-table td {
+    border: 1px solid #e3e6f0 !important;
+}
+
+.check-table tr:nth-child(even) {
+    background: var(--light);
+}
+
+.product-not-found {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+    flex-direction: column;
+}
+
+.product-not-found .search {
+    color: var(--danger);
+    font-size: 28px;
+    font-weight: 600;
+    margin: 5px 0px;
+}
+.product-not-found h3 {
+    text-transform: capitalize;
+    font-family: 'Poppins';
+    font-size: 18px;
+    padding: 10px 0px;
+}

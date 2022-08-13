@@ -1,0 +1,38 @@
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* background: linear-gradient(to top left, var(--gray), var(--gray-dark)); */
+}
+.asides {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 20px;
+}
+.asides .cat_side {
+    width: 20%;
+}
+.asides .main {
+    width: 80%;
+}
+
+
+@media screen and (max-width:1200px) {
+    .asides .cat_side {
+        width: 30%;
+    }
+}
+@media screen and (max-width:990px) {
+    .asides .cat_side {
+        width: 40%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .asides {
+        flex-direction: column;
+    }
+
+    .asides .cat_side, .asides .main {
+        width: 100%;
+    }
+}
